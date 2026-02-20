@@ -17,8 +17,8 @@ results = []
 pipeline_name = 'Atlas_Bronze_CDS_CII_Billing_Manual'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -56,8 +56,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_ZRBINQ_Billing_Plans'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -95,8 +95,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Alliant_Royalties_Alliant_Queries_Finance_12_2025'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -134,8 +134,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Alliant_Royalties_Alliant_Queries_Finance_GL_113015_12_2025'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -173,8 +173,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Depreciation_Schedule'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -212,8 +212,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Daily_Fee_Poker_Install_Base'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -251,8 +251,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Machine_Sales_Revenue_Plugs'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -290,8 +290,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Machine_Sales_Cost_Plugs'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -329,8 +329,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Flat_Fee_Billing'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -375,8 +375,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Lottery_Billing'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -435,8 +435,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Africa_Billing'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -474,8 +474,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_EMEA_Fixed_Fee_Billing'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -513,8 +513,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Greece_WLA_Billing'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -552,8 +552,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_Iceland_Billing'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
@@ -591,8 +591,8 @@ results.append((pipeline_name, pid))
 pipeline_name = 'Atlas_Bronze_LAC_Billing'
 spark.sql(f"""
   INSERT INTO {environment}_011_bronze_core.db_admin.pipeline
-    (pipeline_name, pipeline_description, created_date, modified_date)
-  VALUES ('{pipeline_name}', '{pipeline_name}', current_date(), current_date())
+    (pipeline_name, pipeline_description, pipeline_enabled, created_date, modified_date)
+  VALUES ('{pipeline_name}', '{pipeline_name}', true, current_date(), current_date())
 """)
 
 row = spark.sql(f"""
