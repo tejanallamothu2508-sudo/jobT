@@ -33,7 +33,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/SQL Upload - CII Manual Billing 11-2025.xlsx', current_date(), current_date()),
@@ -43,7 +43,7 @@ spark.sql(f"""
     "header_rows_to_skip": 1,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Performance_CDS_Class_II_ManualBilling"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Performance_CDS_Class_II_ManualBilling"
   }}
 ]', current_date(), current_date())
 """)
@@ -72,7 +72,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/SQL Upload - Billing Plans 11-2025.xlsx', current_date(), current_date()),
@@ -82,7 +82,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.BW_ZRBINQ_BillingPlans"
+    "destination_table": "development_021_bronze_finance.atlas.BW_ZRBINQ_BillingPlans"
   }}
 ]', current_date(), current_date())
 """)
@@ -111,7 +111,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Alliant Queries_ Finance 12_2025.xlsx', current_date(), current_date()),
@@ -121,7 +121,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Exp_RoyaltiesAlliant"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Exp_RoyaltiesAlliant"
   }}
 ]', current_date(), current_date())
 """)
@@ -150,7 +150,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Alliant Queries_Finance GL 113015_12 2025.xlsx', current_date(), current_date()),
@@ -160,7 +160,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Exp_RoyaltiesAlliant"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Exp_RoyaltiesAlliant"
   }}
 ]', current_date(), current_date())
 """)
@@ -189,7 +189,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/2612 Combined NA Scheduled Depreciation-USD.xlsx', current_date(), current_date()),
@@ -199,7 +199,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Exp_Depreciation"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Exp_Depreciation"
   }}
 ]', current_date(), current_date())
 """)
@@ -228,7 +228,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/December 2025 Action Poker Unit Count Data.xlsx', current_date(), current_date()),
@@ -238,7 +238,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.BW_COPA_DailyFeePoker_Units"
+    "destination_table": "development_021_bronze_finance.atlas.BW_COPA_DailyFeePoker_Units"
   }}
 ]', current_date(), current_date())
 """)
@@ -267,7 +267,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/BPC Adhoc Machine Revenue CY25 December Actuals File_New Structure.xlsx', current_date(), current_date()),
@@ -277,7 +277,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.BPC_Plug_Financials"
+    "destination_table": "development_021_bronze_finance.atlas.BPC_Plug_Financials"
   }}
 ]', current_date(), current_date())
 """)
@@ -306,7 +306,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/BPC Adhoc Machine Cost for GBDB Working - 2025 December Actuals.xlsx', current_date(), current_date()),
@@ -316,7 +316,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.BPC_Plug_Financials_MachineCosts"
+    "destination_table": "development_021_bronze_finance.atlas.BPC_Plug_Financials_MachineCosts"
   }}
 ]', current_date(), current_date())
 """)
@@ -345,7 +345,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Hybris Billing File December 2025.xlsx', current_date(), current_date()),
@@ -355,14 +355,14 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Peformance_FF_MJP"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Peformance_FF_MJP"
   }},
   {{
     "sheet_name": "Prior Hybris Billing",
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Peformance_FF_MJP_PriorMonth"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Peformance_FF_MJP_PriorMonth"
   }}
 ]', current_date(), current_date())
 """)
@@ -391,7 +391,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/MJP Reclass 12 -DECEMBER 2025.xlsx', current_date(), current_date()),
@@ -401,28 +401,28 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Peformance_PremLotto_DE"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Peformance_PremLotto_DE"
   }},
   {{
     "sheet_name": "NYL PREM",
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Peformance_PremLotto_NY"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Peformance_PremLotto_NY"
   }},
   {{
     "sheet_name": "RIL PREMIUM",
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Peformance_PremLotto_RI"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Peformance_PremLotto_RI"
   }},
   {{
     "sheet_name": "Non-Premium_11_23 to 12_27",
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Peformance_NonPremLotto_RI"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Peformance_NonPremLotto_RI"
   }}
 ]', current_date(), current_date())
 """)
@@ -451,7 +451,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/12 Africa 3600 ZRBINQ.xlsx', current_date(), current_date()),
@@ -461,7 +461,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Intl_Performance_EMEA_Africa"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Intl_Performance_EMEA_Africa"
   }}
 ]', current_date(), current_date())
 """)
@@ -490,7 +490,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Fixed Fee Install-based overview EMEA 2025-12 v2.xlsx', current_date(), current_date()),
@@ -500,7 +500,7 @@ spark.sql(f"""
     "header_rows_to_skip": 5,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Intl_Performance_EMEA_FixedFee"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Intl_Performance_EMEA_FixedFee"
   }}
 ]', current_date(), current_date())
 """)
@@ -529,7 +529,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Assets_Revenue_November 25.xlsx', current_date(), current_date()),
@@ -539,7 +539,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Intl_Performance_EMEA_GreeceWLA"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Intl_Performance_EMEA_GreeceWLA"
   }}
 ]', current_date(), current_date())
 """)
@@ -568,7 +568,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Oct 1stOfMonth_UIL.xlsx', current_date(), current_date()),
@@ -578,7 +578,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Intl_Performance_EMEA_Iceland"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Intl_Performance_EMEA_Iceland"
   }}
 ]', current_date(), current_date())
 """)
@@ -607,7 +607,7 @@ spark.sql(f"""
     pipeline_id, variable_name, variable_value, created_date, modified_date
   )
   VALUES
-    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas_legacy', current_date(), current_date()),
+    ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
     ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Noviembre Upload .xlsx', current_date(), current_date()),
@@ -617,7 +617,7 @@ spark.sql(f"""
     "header_rows_to_skip": 0,
     "footer_rows_to_skip": 0,
     "has_header_row": true,
-    "destination_table": "development_021_bronze_finance.atlas_legacy.RPM_Intl_Performance_LAC"
+    "destination_table": "development_021_bronze_finance.atlas.RPM_Intl_Performance_LAC"
   }}
 ]', current_date(), current_date())
 """)
