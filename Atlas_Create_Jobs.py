@@ -13,7 +13,7 @@
 
 from databricks.sdk import WorkspaceClient
 from databricks.sdk.service.jobs import (
-    Task, NotebookTask, TaskDependency, JobSettings, RunIf,
+    Task, NotebookTask, TaskDependency, JobSettings, RunIf, Source,
 )
 
 w = WorkspaceClient()
@@ -50,7 +50,7 @@ def build_tasks():
             task_key="Task_PIPELINE_HISTORY_ADD",
             notebook_task=NotebookTask(
                 notebook_path=NB_PIPELINE_HISTORY_ADD,
-                source="WORKSPACE",
+                source=Source.WORKSPACE,
             ),
             existing_cluster_id=CLUSTER_ID,
         ),
@@ -59,7 +59,7 @@ def build_tasks():
             depends_on=[TaskDependency(task_key="Task_PIPELINE_HISTORY_ADD")],
             notebook_task=NotebookTask(
                 notebook_path=NB_IGTEXCEL_BRONZE,
-                source="WORKSPACE",
+                source=Source.WORKSPACE,
             ),
             existing_cluster_id=CLUSTER_ID,
         ),
@@ -69,7 +69,7 @@ def build_tasks():
             run_if=RunIf.ALL_SUCCESS,
             notebook_task=NotebookTask(
                 notebook_path=NB_PIPELINE_HISTORY_UPDATE,
-                source="WORKSPACE",
+                source=Source.WORKSPACE,
                 base_parameters={
                     "job_run_id": "{{job.run_id}}",
                     "pipeline_status": "1",
@@ -83,7 +83,7 @@ def build_tasks():
             run_if=RunIf.AT_LEAST_ONE_FAILED,
             notebook_task=NotebookTask(
                 notebook_path=NB_PIPELINE_HISTORY_UPDATE,
-                source="WORKSPACE",
+                source=Source.WORKSPACE,
                 base_parameters={
                     "job_run_id": "{{job.run_id}}",
                     "pipeline_status": "3",
