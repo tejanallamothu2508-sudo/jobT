@@ -1,0 +1,29 @@
+SQL Upload - CII Manual Billing 11-2025.xlsx - s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/cds_cii_billing_manual/SQL Upload - CII Manual Billing 11-2025.xlsx
+
+SQL Upload - Billing Plans 11-2025.xlsx - s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/ZRBINQ_billing_plans/SQL Upload - Billing Plans 11-2025.xlsx
+
+SQL Upload - Billing Plans 11-2025.xlsx , Alliant Queries_Finance GL 113015_12 2025.xlsx : s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/alliant_royalties
+
+December 2025 Action Poker Unit Count Data.xlsx : s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/daily_fee_poker_install_base
+
+BPC Adhoc Machine Cost for GBDB Working - 2025 December Actuals.xlsx : s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/machine_sales_cost_plugs
+
+2612 Combined NA Scheduled Depreciation-USD.xlsx : s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/depreciation_schedule
+
+BPC Adhoc Machine Revenue CY25 December Actuals File_New Structure: 
+
+Hybris Billing File December 2025 : s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/flat_fee_billing
+
+MJP Reclass 12 -DECEMBER 2025: s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/lottery_billing
+
+12 Africa 3600 ZRBINQ: s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/africa_billing
+
+IGT December_25 report, IGT Silversea - Tui December_25 report:
+
+Fixed Fee Install-based overview EMEA 2025-12 v2: s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/EMEA_fixed_fee_billing
+
+Assets_Revenue_November 25: s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/flat_fee_billing
+
+Oct 1stOfMonth_UIL: s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/iceland_billing
+
+Noviembre Upload.xlsx : s3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/lac_billing
