@@ -36,7 +36,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/SQL Upload - CII Manual Billing 11-2025.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/cds_cii_billing_manual/SQL Upload - CII Manual Billing 11-2025.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "WP",
@@ -75,7 +75,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/SQL Upload - Billing Plans 11-2025.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/ZRBINQ_billing_plans/SQL Upload - Billing Plans 11-2025.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "Upload",
@@ -114,7 +114,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Alliant Queries_ Finance 12_2025.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/alliant_royalties/Alliant Queries_ Finance 12_2025.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "GL529050 & 547000",
@@ -153,7 +153,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Alliant Queries_Finance GL 113015_12 2025.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/alliant_royalties/Alliant Queries_Finance GL 113015_12 2025.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "113015",
@@ -192,7 +192,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/2612 Combined NA Scheduled Depreciation-USD.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/depreciation_schedule/2612 Combined NA Scheduled Depreciation-USD.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "NA Combine DEPRSCH",
@@ -231,7 +231,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/December 2025 Action Poker Unit Count Data.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/daily_fee_poker_install_base/December 2025 Action Poker Unit Count Data.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "December 2025",
@@ -309,7 +309,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/BPC Adhoc Machine Cost for GBDB Working - 2025 December Actuals.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/machine_sales_cost_plugs/BPC Adhoc Machine Cost for GBDB Working - 2025 December Actuals.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "Total Cost by Region by CC",
@@ -348,7 +348,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Hybris Billing File December 2025.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/flat_fee_billing/Hybris Billing File December 2025.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "Hybris Billing December 2025",
@@ -394,7 +394,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/MJP Reclass 12 -DECEMBER 2025.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/lottery_billing/MJP Reclass 12 -DECEMBER 2025.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "DEL PREMIUM",
@@ -454,7 +454,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/12 Africa 3600 ZRBINQ.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/africa_billing/12 Africa 3600 ZRBINQ.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "CC3600 ZRBINQ Dec''25",
@@ -493,7 +493,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Fixed Fee Install-based overview EMEA 2025-12 v2.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/EMEA_fixed_fee_billing/Fixed Fee Install-based overview EMEA 2025-12 v2.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "Active",
@@ -532,7 +532,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Assets_Revenue_November 25.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/flat_fee_billing/Assets_Revenue_November 25.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "Asset Data_Initial Contract",
@@ -571,7 +571,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Oct 1stOfMonth_UIL.xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/iceland_billing/Oct 1stOfMonth_UIL.xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "20251101",
@@ -610,7 +610,7 @@ spark.sql(f"""
     ({pid}, 'db_catalog', 'development_021_bronze_finance.atlas', current_date(), current_date()),
     ({pid}, 'archive_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/archive/excel/', current_date(), current_date()),
     ({pid}, 'failure_folder', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/failure/excel/', current_date(), current_date()),
-    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/Noviembre Upload .xlsx', current_date(), current_date()),
+    ({pid}, 'workbook_path', 's3://cluster-private-bucket-481980074735-us-east-1/intake/atlas/manual/lac_billing/Noviembre Upload .xlsx', current_date(), current_date()),
     ({pid}, 'sheet_mapping', '[
   {{
     "sheet_name": "Num",
