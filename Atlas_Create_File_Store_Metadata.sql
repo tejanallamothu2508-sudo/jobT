@@ -2,7 +2,7 @@
 -- Tracks all Excel file + sheet combinations loaded by Atlas pipelines
 -- Run this in Databricks SQL
 
--- Step 1: Create the metadata table
+-- Step 1: Create the metadata table (without defaults — added in Step 1b)
 CREATE TABLE IF NOT EXISTS development_021_bronze_finance.atlas.file_store_metadata (
   metadata_id BIGINT GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
   pipeline_name STRING NOT NULL,
@@ -11,9 +11,14 @@ CREATE TABLE IF NOT EXISTS development_021_bronze_finance.atlas.file_store_metad
   destination_table STRING NOT NULL,
   load_year INT,
   load_month INT,
-  loaded_date TIMESTAMP DEFAULT current_timestamp(),
-  IS_DELETED BOOLEAN DEFAULT false
+  loaded_date TIMESTAMP,
+  IS_DELETED BOOLEAN
 );
+
+-- Step 1b: Enable column defaults feature, then set defaults
+ALTER TABLE development_021_bronze_finance.atlas.file_store_metadata SET TBLPROPERTIES('delta.feature.allowColumnDefaults' = 'supported');
+ALTER TABLE development_021_bronze_finance.atlas.file_store_metadata ALTER COLUMN loaded_date SET DEFAULT current_timestamp();
+ALTER TABLE development_021_bronze_finance.atlas.file_store_metadata ALTER COLUMN IS_DELETED SET DEFAULT false;
 
 -- Step 2: Insert all 22 sheet mappings across 15 pipelines
 INSERT INTO development_021_bronze_finance.atlas.file_store_metadata
